@@ -6,14 +6,12 @@
 package Entity;
 
 
-
 /**
  *
  * @author escobar
  */
-public class FeedBack {
+public class FeedBack  {
 
-   
     private Integer idFeed;
     private String sujet;
     private String description;

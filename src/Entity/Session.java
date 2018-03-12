@@ -13,13 +13,18 @@ import java.util.Date;
  * @author escobar
  */
 public class Session {
+
     private Integer idSes;
     private Date dateDebSes;
     private Date dateFinSes;
     private Integer capaciteSes;
     private String etatSes;
-    private Promotion idPromo;
+    private String imagesess;
+    private Double prixSes;
+    private Double nvPrixSes;
+    private String nomSes;
     private Formation idFor;
+    private Collection<Linepromoses> linepromosesCollection;
     private Collection<Educate> educateCollection;
 
     public Session() {
@@ -69,12 +74,36 @@ public class Session {
         this.etatSes = etatSes;
     }
 
-    public Promotion getIdPromo() {
-        return idPromo;
+    public String getImagesess() {
+        return imagesess;
     }
 
-    public void setIdPromo(Promotion idPromo) {
-        this.idPromo = idPromo;
+    public void setImagesess(String imagesess) {
+        this.imagesess = imagesess;
+    }
+
+    public Double getPrixSes() {
+        return prixSes;
+    }
+
+    public void setPrixSes(Double prixSes) {
+        this.prixSes = prixSes;
+    }
+
+    public Double getNvPrixSes() {
+        return nvPrixSes;
+    }
+
+    public void setNvPrixSes(Double nvPrixSes) {
+        this.nvPrixSes = nvPrixSes;
+    }
+
+    public String getNomSes() {
+        return nomSes;
+    }
+
+    public void setNomSes(String nomSes) {
+        this.nomSes = nomSes;
     }
 
     public Formation getIdFor() {
@@ -83,6 +112,14 @@ public class Session {
 
     public void setIdFor(Formation idFor) {
         this.idFor = idFor;
+    }
+
+    public Collection<Linepromoses> getLinepromosesCollection() {
+        return linepromosesCollection;
+    }
+
+    public void setLinepromosesCollection(Collection<Linepromoses> linepromosesCollection) {
+        this.linepromosesCollection = linepromosesCollection;
     }
 
     public Collection<Educate> getEducateCollection() {

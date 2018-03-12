@@ -7,6 +7,7 @@ package Entity;
 
 import java.util.Collection;
 
+
 /**
  *
  * @author escobar

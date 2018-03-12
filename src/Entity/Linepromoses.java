@@ -11,37 +11,27 @@ import java.util.Date;
  *
  * @author escobar
  */
-public class LinePromo  {
+public class Linepromoses  {
 
-    private Integer id;
-    private Double views;
+    private Integer idLine;
     private Date dateDeb;
     private Date dateFin;
-    private String etatLinePromo;
+    private Session idSes;
     private Promotion idPromo;
-    private Produit idProd;
 
-    public LinePromo() {
+    public Linepromoses() {
     }
 
-    public LinePromo(Integer id) {
-        this.id = id;
+    public Linepromoses(Integer idLine) {
+        this.idLine = idLine;
     }
 
-    public Integer getId() {
-        return id;
+    public Integer getIdLine() {
+        return idLine;
     }
 
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
-    public Double getViews() {
-        return views;
-    }
-
-    public void setViews(Double views) {
-        this.views = views;
+    public void setIdLine(Integer idLine) {
+        this.idLine = idLine;
     }
 
     public Date getDateDeb() {
@@ -60,12 +50,12 @@ public class LinePromo  {
         this.dateFin = dateFin;
     }
 
-    public String getEtatLinePromo() {
-        return etatLinePromo;
+    public Session getIdSes() {
+        return idSes;
     }
 
-    public void setEtatLinePromo(String etatLinePromo) {
-        this.etatLinePromo = etatLinePromo;
+    public void setIdSes(Session idSes) {
+        this.idSes = idSes;
     }
 
     public Promotion getIdPromo() {
@@ -76,29 +66,21 @@ public class LinePromo  {
         this.idPromo = idPromo;
     }
 
-    public Produit getIdProd() {
-        return idProd;
-    }
-
-    public void setIdProd(Produit idProd) {
-        this.idProd = idProd;
-    }
-
     @Override
     public int hashCode() {
         int hash = 0;
-        hash += (id != null ? id.hashCode() : 0);
+        hash += (idLine != null ? idLine.hashCode() : 0);
         return hash;
     }
 
     @Override
     public boolean equals(Object object) {
         // TODO: Warning - this method won't work in the case the id fields are not set
-        if (!(object instanceof LinePromo)) {
+        if (!(object instanceof Linepromoses)) {
             return false;
         }
-        LinePromo other = (LinePromo) object;
-        if ((this.id == null && other.id != null) || (this.id != null && !this.id.equals(other.id))) {
+        Linepromoses other = (Linepromoses) object;
+        if ((this.idLine == null && other.idLine != null) || (this.idLine != null && !this.idLine.equals(other.idLine))) {
             return false;
         }
         return true;
@@ -106,7 +88,7 @@ public class LinePromo  {
 
     @Override
     public String toString() {
-        return "Entity.LinePromo[ id=" + id + " ]";
+        return "Entity.Linepromoses[ idLine=" + idLine + " ]";
     }
     
 }

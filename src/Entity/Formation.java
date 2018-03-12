@@ -7,6 +7,7 @@ package Entity;
 
 import java.io.Serializable;
 import java.util.Collection;
+import java.util.Date;
 import javax.persistence.Basic;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -19,16 +20,22 @@ import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 
 /**
  *
  * @author escobar
  */
-public class Formation {
+public class Formation  {
 
     private Integer idFor;
     private String nomFor;
+    private String place;
     private String etatFor;
+    private String descriptionFor;
+    private Date dateFor;
+    private String imageform;
     private Collection<Session> sessionCollection;
     private TypeFormation idTypeFor;
     private Utilisateur idUser;
@@ -56,12 +63,44 @@ public class Formation {
         this.nomFor = nomFor;
     }
 
+    public String getPlace() {
+        return place;
+    }
+
+    public void setPlace(String place) {
+        this.place = place;
+    }
+
     public String getEtatFor() {
         return etatFor;
     }
 
     public void setEtatFor(String etatFor) {
         this.etatFor = etatFor;
+    }
+
+    public String getDescriptionFor() {
+        return descriptionFor;
+    }
+
+    public void setDescriptionFor(String descriptionFor) {
+        this.descriptionFor = descriptionFor;
+    }
+
+    public Date getDateFor() {
+        return dateFor;
+    }
+
+    public void setDateFor(Date dateFor) {
+        this.dateFor = dateFor;
+    }
+
+    public String getImageform() {
+        return imageform;
+    }
+
+    public void setImageform(String imageform) {
+        this.imageform = imageform;
     }
 
     public Collection<Session> getSessionCollection() {

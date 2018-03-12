@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="test1PU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>Entity.TestMoney</class>
+    <class>Entity.Formation</class>
+    <class>Entity.CategorieRec</class>
+    <class>Entity.Promotion</class>
+    <class>Entity.Produit</class>
+    <class>Entity.Linepromoses</class>
+    <class>Entity.FeedBack</class>
+    <class>Entity.Educate</class>
+    <class>Entity.Note</class>
+    <class>Entity.LinePromo</class>
+    <class>Entity.LineCmd</class>
+    <class>Entity.Session</class>
+    <class>Entity.Categorie</class>
+    <class>Entity.Thread</class>
+    <class>Entity.Commande</class>
+    <class>Entity.Utilisateur</class>
+    <class>Entity.Recette</class>
+    <class>Entity.Commentaire</class>
+    <class>Entity.TypeFormation</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/cupcakes?zeroDateTimeBehavior=convertToNull"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value=""/>
+    </properties>
+  </persistence-unit>
+</persistence>

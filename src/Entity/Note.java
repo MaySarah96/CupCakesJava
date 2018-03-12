@@ -6,14 +6,13 @@
 package Entity;
 
 import java.util.Date;
-
+import java.util.Objects;
 
 /**
  *
  * @author escobar
  */
-
-public class Note {
+public class Note  {
 
     private Double note;
     private Date dateNote;
@@ -24,6 +23,7 @@ public class Note {
     public Note() {
     }
 
+    
     public Double getNote() {
         return note;
     }
@@ -64,5 +64,33 @@ public class Note {
         this.utilisateur = utilisateur;
     }
 
-  
+    @Override
+    public int hashCode() {
+        int hash = 5;
+        hash = 29 * hash + Objects.hashCode(this.recette);
+        hash = 29 * hash + Objects.hashCode(this.utilisateur);
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Note other = (Note) obj;
+        if (!Objects.equals(this.recette, other.recette)) {
+            return false;
+        }
+        if (!Objects.equals(this.utilisateur, other.utilisateur)) {
+            return false;
+        }
+        return true;
+    }
+
 }

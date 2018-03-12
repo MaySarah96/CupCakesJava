@@ -5,19 +5,22 @@
  */
 package Entity;
 
+import java.util.Collection;
 import java.util.Date;
+
 
 /**
  *
  * @author escobar
  */
-public class Thread  {
+public class Thread {
 
     private String id;
     private String permalink;
     private boolean isCommentable;
     private int numComments;
     private Date lastCommentAt;
+    private Collection<Commentaire> commentaireCollection;
 
     public Thread() {
     }
@@ -71,6 +74,14 @@ public class Thread  {
 
     public void setLastCommentAt(Date lastCommentAt) {
         this.lastCommentAt = lastCommentAt;
+    }
+
+    public Collection<Commentaire> getCommentaireCollection() {
+        return commentaireCollection;
+    }
+
+    public void setCommentaireCollection(Collection<Commentaire> commentaireCollection) {
+        this.commentaireCollection = commentaireCollection;
     }
 
     @Override

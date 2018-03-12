@@ -8,15 +8,12 @@ package Entity;
 import java.util.Date;
 import java.util.Objects;
 
-
 /**
  *
  * @author escobar
  */
+public class Educate {
 
-public class Educate  {
-
-   
     private Date dateIscri;
     private String etatEduc;
     private Session session;
@@ -25,7 +22,7 @@ public class Educate  {
     public Educate() {
     }
 
-  
+
     public Date getDateIscri() {
         return dateIscri;
     }
@@ -61,7 +58,9 @@ public class Educate  {
     @Override
     public int hashCode() {
         int hash = 5;
-        hash = 79 * hash + Objects.hashCode(this.session);
+        hash = 97 * hash + Objects.hashCode(this.dateIscri);
+        hash = 97 * hash + Objects.hashCode(this.session);
+        hash = 97 * hash + Objects.hashCode(this.utilisateur);
         return hash;
     }
 
@@ -77,7 +76,13 @@ public class Educate  {
             return false;
         }
         final Educate other = (Educate) obj;
+        if (!Objects.equals(this.dateIscri, other.dateIscri)) {
+            return false;
+        }
         if (!Objects.equals(this.session, other.session)) {
+            return false;
+        }
+        if (!Objects.equals(this.utilisateur, other.utilisateur)) {
             return false;
         }
         return true;

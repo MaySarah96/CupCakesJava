@@ -6,17 +6,17 @@
 package Entity;
 
 import java.util.Collection;
+
 /**
  *
  * @author escobar
  */
 public class Promotion {
-
     private Integer idPromo;
     private Double tauxPromo;
     private String etatPromo;
     private Collection<LinePromo> linePromoCollection;
-    private Collection<Session> sessionCollection;
+    private Collection<Linepromoses> linepromosesCollection;
 
     public Promotion() {
     }
@@ -57,12 +57,12 @@ public class Promotion {
         this.linePromoCollection = linePromoCollection;
     }
 
-    public Collection<Session> getSessionCollection() {
-        return sessionCollection;
+    public Collection<Linepromoses> getLinepromosesCollection() {
+        return linepromosesCollection;
     }
 
-    public void setSessionCollection(Collection<Session> sessionCollection) {
-        this.sessionCollection = sessionCollection;
+    public void setLinepromosesCollection(Collection<Linepromoses> linepromosesCollection) {
+        this.linepromosesCollection = linepromosesCollection;
     }
 
     @Override

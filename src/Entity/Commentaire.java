@@ -11,14 +11,15 @@ import java.util.Date;
  *
  * @author escobar
  */
+public class Commentaire  {
 
-public class Commentaire {
-
+    private String body;
+    private String ancestors;
+    private int depth;
+    private Date createdAt;
+    private int state;
     private Integer idCmnt;
-    private String descriptionCmnt;
-    private Date dateCmnt;
-    private String etatCmnt;
-    private Recette idRec;
+    private Thread idRec;
     private Utilisateur idUser;
 
     public Commentaire() {
@@ -26,6 +27,55 @@ public class Commentaire {
 
     public Commentaire(Integer idCmnt) {
         this.idCmnt = idCmnt;
+    }
+
+    public Commentaire(Integer idCmnt, String body, String ancestors, int depth, Date createdAt, int state) {
+        this.idCmnt = idCmnt;
+        this.body = body;
+        this.ancestors = ancestors;
+        this.depth = depth;
+        this.createdAt = createdAt;
+        this.state = state;
+    }
+
+    public String getBody() {
+        return body;
+    }
+
+    public void setBody(String body) {
+        this.body = body;
+    }
+
+    public String getAncestors() {
+        return ancestors;
+    }
+
+    public void setAncestors(String ancestors) {
+        this.ancestors = ancestors;
+    }
+
+    public int getDepth() {
+        return depth;
+    }
+
+    public void setDepth(int depth) {
+        this.depth = depth;
+    }
+
+    public Date getCreatedAt() {
+        return createdAt;
+    }
+
+    public void setCreatedAt(Date createdAt) {
+        this.createdAt = createdAt;
+    }
+
+    public int getState() {
+        return state;
+    }
+
+    public void setState(int state) {
+        this.state = state;
     }
 
     public Integer getIdCmnt() {
@@ -36,35 +86,11 @@ public class Commentaire {
         this.idCmnt = idCmnt;
     }
 
-    public String getDescriptionCmnt() {
-        return descriptionCmnt;
-    }
-
-    public void setDescriptionCmnt(String descriptionCmnt) {
-        this.descriptionCmnt = descriptionCmnt;
-    }
-
-    public Date getDateCmnt() {
-        return dateCmnt;
-    }
-
-    public void setDateCmnt(Date dateCmnt) {
-        this.dateCmnt = dateCmnt;
-    }
-
-    public String getEtatCmnt() {
-        return etatCmnt;
-    }
-
-    public void setEtatCmnt(String etatCmnt) {
-        this.etatCmnt = etatCmnt;
-    }
-
-    public Recette getIdRec() {
+    public Thread getIdRec() {
         return idRec;
     }
 
-    public void setIdRec(Recette idRec) {
+    public void setIdRec(Thread idRec) {
         this.idRec = idRec;
     }
 

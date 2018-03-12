@@ -11,6 +11,7 @@ import java.util.Date;
  *
  * @author escobar
  */
+
 public class Utilisateur {
 
     private Integer id;
@@ -56,11 +57,6 @@ public class Utilisateur {
         this.password = password;
         this.roles = roles;
     }
-
-    public Utilisateur(String username) {
-        this.username = username;
-    }
-    
 
     public Integer getId() {
         return id;

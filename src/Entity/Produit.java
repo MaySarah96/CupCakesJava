@@ -7,20 +7,23 @@ package Entity;
 
 import java.util.Collection;
 
+
 /**
  *
  * @author escobar
  */
-public class Produit  {
+public class Produit {
 
     private Integer idProd;
     private String nomProd;
     private Double qteStockProd;
     private String typeProd;
-    private Double prixProd;
+    private Integer prixProd;
+    private Integer nvPrix;
     private String etatProd;
     private String imageprod;
     private Integer qteAcheter;
+    private int valeur;
     private Collection<LinePromo> linePromoCollection;
     private Categorie idCat;
     private Utilisateur idUser;
@@ -31,6 +34,11 @@ public class Produit  {
 
     public Produit(Integer idProd) {
         this.idProd = idProd;
+    }
+
+    public Produit(Integer idProd, int valeur) {
+        this.idProd = idProd;
+        this.valeur = valeur;
     }
 
     public Integer getIdProd() {
@@ -65,12 +73,20 @@ public class Produit  {
         this.typeProd = typeProd;
     }
 
-    public Double getPrixProd() {
+    public Integer getPrixProd() {
         return prixProd;
     }
 
-    public void setPrixProd(Double prixProd) {
+    public void setPrixProd(Integer prixProd) {
         this.prixProd = prixProd;
+    }
+
+    public Integer getNvPrix() {
+        return nvPrix;
+    }
+
+    public void setNvPrix(Integer nvPrix) {
+        this.nvPrix = nvPrix;
     }
 
     public String getEtatProd() {
@@ -95,6 +111,14 @@ public class Produit  {
 
     public void setQteAcheter(Integer qteAcheter) {
         this.qteAcheter = qteAcheter;
+    }
+
+    public int getValeur() {
+        return valeur;
+    }
+
+    public void setValeur(int valeur) {
+        this.valeur = valeur;
     }
 
     public Collection<LinePromo> getLinePromoCollection() {

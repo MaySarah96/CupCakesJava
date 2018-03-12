@@ -5,13 +5,24 @@
  */
 package Entity;
 
+import java.io.Serializable;
+import java.util.Objects;
+import javax.persistence.Column;
+import javax.persistence.EmbeddedId;
+import javax.persistence.Entity;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
+import javax.persistence.Table;
 
 /**
  *
  * @author escobar
  */
-public class LineCmd  {
+public class LineCmd {
 
+    
     private Integer qteAcheter;
     private String etatLineCmd;
     private Produit produit;
@@ -20,6 +31,7 @@ public class LineCmd  {
     public LineCmd() {
     }
 
+    
 
     public Integer getQteAcheter() {
         return qteAcheter;
@@ -51,5 +63,33 @@ public class LineCmd  {
 
     public void setCommande(Commande commande) {
         this.commande = commande;
-    }    
+    }
+
+    @Override
+    public int hashCode() {
+        int hash = 7;
+        hash = 67 * hash + Objects.hashCode(this.commande);
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final LineCmd other = (LineCmd) obj;
+        if (!Objects.equals(this.commande, other.commande)) {
+            return false;
+        }
+        return true;
+    }
+
+   
+    
 }

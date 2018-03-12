@@ -7,12 +7,10 @@ package Entity;
 
 import java.util.Collection;
 
-
 /**
  *
  * @author escobar
  */
-
 public class Categorie {
 
     private Integer idCat;
@@ -72,7 +70,7 @@ public class Categorie {
 
     @Override
     public String toString() {
-        return "Categorie[ idCat=" + idCat + " ]";
+        return "Entity.Categorie[ idCat=" + idCat + " ]";
     }
     
 }

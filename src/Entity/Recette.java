@@ -12,17 +12,17 @@ import java.util.Date;
  *
  * @author escobar
  */
-public class Recette {
+public class Recette  {
 
     private Integer idRec;
     private String nomRec;
     private Date dateRec;
     private String etatRec;
     private String descriptionRec;
+    private String imageRec;
     private Collection<Note> noteCollection;
     private CategorieRec idCatRec;
     private Utilisateur idUser;
-    private Collection<Commentaire> commentaireCollection;
 
     public Recette() {
     }
@@ -71,6 +71,14 @@ public class Recette {
         this.descriptionRec = descriptionRec;
     }
 
+    public String getImageRec() {
+        return imageRec;
+    }
+
+    public void setImageRec(String imageRec) {
+        this.imageRec = imageRec;
+    }
+
     public Collection<Note> getNoteCollection() {
         return noteCollection;
     }
@@ -93,14 +101,6 @@ public class Recette {
 
     public void setIdUser(Utilisateur idUser) {
         this.idUser = idUser;
-    }
-
-    public Collection<Commentaire> getCommentaireCollection() {
-        return commentaireCollection;
-    }
-
-    public void setCommentaireCollection(Collection<Commentaire> commentaireCollection) {
-        this.commentaireCollection = commentaireCollection;
     }
 
     @Override
