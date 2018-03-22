@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="470.0" prefWidth="640.0"  xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.141" fx:controller="test1.Feedback.FeedbackPane">
+   <children>
+      <Button fx:id="button" layoutX="431.0" layoutY="374.0" mnemonicParsing="false" onAction="#Envoyer" prefHeight="51.0" prefWidth="132.0" text="Button" />
+      <TextField fx:id="Sujet" layoutX="71.0" layoutY="102.0" />
+      <TextArea fx:id="Desc" layoutX="71.0" layoutY="181.0" prefHeight="181.0" prefWidth="492.0" />
+      <Label layoutX="71.0" layoutY="71.0" prefHeight="17.0" prefWidth="87.0" text="Sujet" />
+      <Label layoutX="71.0" layoutY="148.0" prefHeight="17.0" prefWidth="101.0" text="Description" />
+   </children>
+</AnchorPane>

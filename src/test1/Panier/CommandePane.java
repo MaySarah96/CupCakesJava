@@ -7,6 +7,7 @@ package test1.Panier;
 
 import Services.CommandeService;
 import Entity.Commande;
+import Entity.LineCmd;
 import Entity.Utilisateur;
 import java.io.IOException;
 import java.net.URL;
@@ -51,8 +52,9 @@ public class CommandePane extends AnchorPane {
         Date date = java.sql.Date.valueOf(DateLiv.getValue());
         String adr = AdrLiv.getText();
         Commande com = new Commande(date,(double)15.22,date,adr,"en cours","vrai");
+        LineCmd ln = new LineCmd(15,"vrai");
         try {
-            commande.AjouterCommande(com);
+            commande.AjouterCommande(com,ln);
         } catch (SQLException ex) {
             Logger.getLogger(CommandePane.class.getName()).log(Level.SEVERE, null, ex);
         }

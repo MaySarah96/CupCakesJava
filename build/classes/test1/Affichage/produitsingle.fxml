@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="test1.Affichage.ProduitsingleController">
+   <children>
+      <ImageView fx:id="imagprod" fitHeight="264.0" fitWidth="248.0" layoutX="30.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="nomProd" layoutX="300.0" layoutY="81.0" prefHeight="17.0" prefWidth="114.0" text="Nom Produit" />
+      <Label fx:id="proxProd" layoutX="300.0" layoutY="132.0" prefHeight="17.0" prefWidth="85.0" text="Prix" />
+      <Button fx:id="panier" layoutX="385.0" layoutY="215.0" mnemonicParsing="false" onAction="#panier" prefHeight="40.0" prefWidth="114.0" text="ajouter au panier" />
+   </children>
+</AnchorPane>

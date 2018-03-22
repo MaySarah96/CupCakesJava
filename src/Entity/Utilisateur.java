@@ -280,7 +280,7 @@ public class Utilisateur {
 
     @Override
     public String toString() {
-        return "Entity.Utilisateur[ id=" + id + " ]";
+        return "nom " + username ;
     }
     
 }
