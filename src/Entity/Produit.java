@@ -44,6 +44,15 @@ public class Produit {
         this.imageprod= imageprod;
     }
 
+    public Produit(String nomProd, Double qteStockProd, Integer prixProd, String imageprod, Categorie idCat, Utilisateur idUser) {
+        this.nomProd = nomProd;
+        this.qteStockProd = qteStockProd;
+        this.prixProd = prixProd;
+        this.imageprod = imageprod;
+        this.idCat = idCat;
+        this.idUser = idUser;
+    }
+
     
     public Produit(String nomProd, Double qteStockProd, String typeProd, Integer prixProd,  String etatProd) {
         this.nomProd = nomProd;

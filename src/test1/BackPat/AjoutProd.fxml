@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
 <?import com.jfoenix.controls.JFXTextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
@@ -9,8 +10,9 @@
       <JFXTextField fx:id="nomProd" focusColor="#a8408f" layoutX="61.0" layoutY="61.0" prefHeight="21.0" prefWidth="196.0" promptText="Nom Produit" />
       <JFXTextField fx:id="qteStock" layoutX="61.0" layoutY="129.0" prefHeight="25.0" prefWidth="196.0" promptText="Quantité Stock" />
       <JFXTextField fx:id="prixprod" layoutX="57.0" layoutY="190.0" prefHeight="25.0" prefWidth="196.0" promptText="Prix  Unitaire" />
-      <JFXTextField fx:id="typProd" layoutX="57.0" layoutY="264.0" prefHeight="25.0" prefWidth="196.0" promptText="type Produit" />
       <JFXButton layoutX="414.0" layoutY="403.0" onAction="#Ajouter" prefHeight="43.0" prefWidth="196.0" text="Ajouter" />
-      <JFXButton fx:id="image" layoutX="57.0" layoutY="346.0" onAction="#AjouterImage" prefHeight="25.0" prefWidth="196.0" text="Image" />
+      <JFXButton fx:id="image" layoutX="57.0" layoutY="412.0" onAction="#AjouterImage" prefHeight="25.0" prefWidth="196.0" text="Image" />
+      <JFXComboBox fx:id="typProd" layoutX="57.0" layoutY="245.0" prefHeight="25.0" prefWidth="196.0" promptText="Type Produit" />
+      <JFXComboBox fx:id="cat" layoutX="57.0" layoutY="315.0" prefHeight="25.0" prefWidth="196.0" promptText="Categorie Produit" />
    </children>
 </AnchorPane>

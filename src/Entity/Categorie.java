@@ -20,6 +20,11 @@ public class Categorie {
     public Categorie() {
     }
 
+    public Categorie(Integer idCat, String nomCat) {
+        this.idCat = idCat;
+        this.nomCat = nomCat;
+    }
+
     public Categorie(Integer idCat) {
         this.idCat = idCat;
     }

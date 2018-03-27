@@ -34,7 +34,7 @@ public class NewMain {
             ProduitService ps = new ProduitService();
         try {
             Produit p = new Produit("haja bnina",(double)15.2,"piece",30,"vrai");
-            ps.AjouterProduit(p);
+         //   ps.AjouterProduit(p);
             
             pan.ajouterArticle(p, 9);
            Integer Tot = pan.calculerPanier();

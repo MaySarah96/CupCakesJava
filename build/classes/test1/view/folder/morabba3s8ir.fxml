@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="227.0" prefWidth="303.0" style="-fx-background-color: #242a31;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="test1.view.folder.Morabba3s8irController">
+   <children>
+      <VBox fx:id="prod" alignment="TOP_CENTER" layoutX="10.0" layoutY="10.0" prefHeight="252.0" prefWidth="293.0">
+         <children>
+            <Pane prefHeight="262.0" prefWidth="300.0" VBox.vgrow="NEVER">
+               <children>
+                  <VBox alignment="CENTER" layoutY="30.0" prefHeight="196.0" prefWidth="273.0" style="-fx-background-color: white; -fx-background-radius: 10px;">
+                     <padding>
+                        <Insets top="80.0" />
+                     </padding>
+                     <children>
+                        <Text fx:id="nom" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom produit">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="5.0" />
+                           </VBox.margin>
+                        </Text>
+                        <Text fx:id="cat" strokeType="OUTSIDE" strokeWidth="0.0" text="Categorie">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="5.0" />
+                           </VBox.margin>
+                        </Text>
+                        <Text fx:id="qte" strokeType="OUTSIDE" strokeWidth="0.0" text="Description">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="5.0" />
+                           </VBox.margin>
+                        </Text>
+                        <HBox prefHeight="4.0" prefWidth="273.0" style="-fx-background-color: #b00805;">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                           <children>
+                              <Text fx:id="prix" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Prix produit " />
+                              <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <Text fx:id="patnom" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom patisserie" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" layoutX="40.0" prefHeight="95.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fx:id="image" fitHeight="110.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true" VBox.vgrow="ALWAYS" />
+                     </children>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </Pane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
